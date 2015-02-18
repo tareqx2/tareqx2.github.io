@@ -2,7 +2,7 @@ $(document).ready(function(){
 	function getStory(){
 		$('.loading').show();
 		$.ajax({
-		  url: "http://story-generator.herokuapp.com/api/v1.0/story"
+		  url: "http://story-generator.appspot.com/api/v1.0/story"
 		})
 		.done(function(html){
 			var json = jQuery.parseJSON(html);
